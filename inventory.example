@@ -1,0 +1,10 @@
+[server]
+10.204.97.168
+10.254.97.168
+
+[all:vars]
+ansible_ssh_user=vaadmin
+ansible_ssh_pass=admin123
+ansible_become_method=su
+ansible_become_user=root
+ansible_become_pass=Mandiri123
