@@ -17,6 +17,6 @@ sudo apt install sshpass
 
 ### Example
 
-- ansible-playbook -i inventory sosreport.yml
+- ansible-playbook -i inventory generate.yml
 - ansible-playbook -i inventory pull.yml
 
