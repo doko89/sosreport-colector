@@ -4,6 +4,9 @@ Tool to generate sosreport and collect file from server
 
 ### Requirement
 
+- ansible
+- sshpass
+
 # Centos/Rhel/Fedora
 
 sudo yum install sshpass
