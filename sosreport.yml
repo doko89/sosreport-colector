@@ -2,8 +2,6 @@
   become: true
   gather_facts: no
   tasks:
-#    - name: collecting sosreport
-#      command: /usr/sbin/sosreport --batch
-    - name: fetch sosreport to remote pc
-      fetch: src=/var/tmp/sosreport* dest=./ flat=yes
+    - name: collecting sosreport
+      command: /usr/sbin/sosreport --batch
       
