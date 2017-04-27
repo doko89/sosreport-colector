@@ -1,11 +1,12 @@
 - hosts: all
   become: true
+  gather_facts: no
   tasks:
     - name: listing sosreport file
       shell: (cd /var/tmp; find -name "sosreport-*")|cut -d'/' -f2
       register: sosreport_file
 
     - name: fetch sosreport to remote pc
-      fetch: src=/var/tmp/{{ item }} dest=sosreport/ flat=yes
-      with_items: sosreport_files.stdout_lines
+      fetch: src=/var/tmp/{{ item }} dest=sosreport/ 
+      with_items: "{{ sosreport_file.stdout_lines }}"
     
