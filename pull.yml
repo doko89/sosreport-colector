@@ -7,6 +7,6 @@
       register: sosreport_file
 
     - name: fetch sosreport to remote pc
-      fetch: src=/var/tmp/{{ item }} dest=sosreport/ 
+      fetch: src=/var/tmp/{{ item }} dest=sosreport/ flat=yes
       with_items: "{{ sosreport_file.stdout_lines }}"
     
