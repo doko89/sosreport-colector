@@ -1,8 +1,8 @@
-### Sosreport Collector
+## Sosreport Collector
 
 Tool to generate sosreport and collect file from server
 
-## Requirement
+### Requirement
 
 # Centos/Rhel/Fedora
 
@@ -12,7 +12,7 @@ sudo yum install sshpass
 
 sudo apt install sshpass
 
-## Example
+### Example
 
 ansible-playbook -i inventory sosreport.yml
 
